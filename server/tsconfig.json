@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+      "rootDirs": ["src"],
+      "outDir": "dist",
+      "lib": ["es2020",],
+      "target": "es2020",
+      "module": "Node16",
+      "moduleResolution": "Node16",
+      "esModuleInterop": true,
+      "types": ["node"]
+    },
+    "include": ["src"]
+  }
+
+/*
+{
+    "compilerOptions": {
+      "rootDirs": ["src", "custom-types.d.ts"],     // Directories containing source files
+      "outDir": "dist",                             // Compiled JavaScript will go into the dist folder
+      "lib": ["es2020", "dom"],                     // Added "dom" for browser-like globals (like console)
+      "target": "es2020",                           // Target ECMAScript 2020
+      "module": "commonjs",                         // Node.js uses CommonJS modules
+      "moduleResolution": "node",                   // Resolves modules in Node.js style
+      "esModuleInterop": true,                      // Allow compatibility for ES module imports
+      "types": ["node", "express"],                 // Added express types for better type-checking
+      "skipLibCheck": true,                         // Skip type-checking for third-party libraries
+      "strict": true                                // Enable strict type-checking
+    },
+    "include": ["src"],                              // Include source files inside "src"
+    "exclude": ["node_modules"]                      // Exclude the node_modules folder from the compilation
+  }
+  */
